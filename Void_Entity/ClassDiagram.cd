@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameOver">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAAAAwAAAAAQAQAAQAAAAAAAAAAAIAQAAQA=</HashCode>
+      <FileName>GameOver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gameplay">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIQAIQQCCAAAAwkAEIAAASAEAAoEAAAEAAAAAgAAQAA=</HashCode>
+      <FileName>Gameplay.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameState">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAACAAwABAAAAAQAAAAoAAAAAIAAAABACIAA=</HashCode>
+      <FileName>GameState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAACAwAAAAAQAUAQAAJgAAAAIAAAIBQAAQA=</HashCode>
+      <FileName>MainMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sound">
+    <Position X="11.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAABAAQBQAQACUAAAAAAAAQABAACAAQAAAA=</HashCode>
+      <FileName>Sound.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="0.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgQAAgAAAIgABwAAAAAQAAAAAAAIQAAACAiAAAAAAgU=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StraightFlier">
+    <Position X="4.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAAIgABwAAAEAQAAAAADAIQAQASACAAAAAAgU=</HashCode>
+      <FileName>StraightFlier.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Animation">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACAAAAAAAgAAgAAiAAAQAAAgAAAAAAAEAAAAAAIAAk=</HashCode>
+      <FileName>Animation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Button">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAAQBAgAAgAAiAAQAEIQAAQJAAAAiAiAAAEYAgQ=</HashCode>
+      <FileName>Button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkQIQiEAAACBA0AAAAwBAQAAgAoEACABIAAAIBACIY4=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Missile">
+    <Position X="7.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAQhIgAAgAAiAAQAFIQAAQJMAAAiAiAAAAIAgQ=</HashCode>
+      <FileName>Missile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="9.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAQBIgAAgAAiAAQAEIQAAQJAAAAiAiAAQAIAgU=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Vec2">
+    <Position X="13.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABggAAAAAA=</HashCode>
+      <FileName>Math.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Direction">
+    <Position X="15.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhAAAAA=</HashCode>
+      <FileName>Math.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="GameEvents.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Missile.cpp" />
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="GameOver.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>SoundFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="StraightFlier.cpp">
+      <Filter>Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Gameplay.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Missile.h" />
+    <ClInclude Include="GameState.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="GameOver.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>SoundFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="StraightFlier.h">
+      <Filter>Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Gameplay.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="Explosion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GameStates">
+      <UniqueIdentifier>{67f29213-e848-419a-8af3-39b57211142f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoundFiles">
+      <UniqueIdentifier>{5c0adfa2-f324-416a-9a9c-5e83d681da6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemies">
+      <UniqueIdentifier>{38b793b3-ae5e-4080-bb16-065a4e87e9f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
