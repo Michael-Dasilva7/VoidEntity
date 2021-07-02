@@ -15,4 +15,4 @@
   Generating Code...
 SDL2main.lib(SDL_windows_main.obj) : error LNK2019: unresolved external symbol __imp__fprintf referenced in function _ShowError
 SDL2main.lib(SDL_windows_main.obj) : error LNK2019: unresolved external symbol __imp____iob_func referenced in function _ShowError
-C:\Projects\C++ and C# Class Source Code\Prog33921 - lucas\Assignments\FinalProject\Void_Entity\Debug\SpaceShooter.exe : fatal error LNK1120: 2 unresolved externals
+C:\Programming\FinalProject\Void_Entity\Debug\SpaceShooter.exe : fatal error LNK1120: 2 unresolved externals

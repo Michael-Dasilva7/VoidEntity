@@ -53,6 +53,7 @@ void Gameplay::Initialize()
 	mFlierTex = LoadTexture("media/enemy.png", renderer);
 	//load sound for gameplay
 	LoadLevel();
+	
 
 
 }
@@ -86,6 +87,9 @@ void Gameplay::LoadLevel()
 	mPlayer->setLives(3);
 	mPlayer->SetColor(192, 0, 164, 255);                        // set fallback color
 	mPlayer->SetCenter(30, mGame->GetScreenHeight() / 2);
+
+	mHighScore = 0;//each levelmight need to carry this over. if statement with a level incrementer
+
 }
 
 void Gameplay::ClearLevel()
@@ -189,6 +193,9 @@ void Gameplay::Update()
      		mEnemyCount--;
 			std::cout << "Enemy Destroyed at(seconds): " << mCurrentTime << std::endl;
 			mIsDestroyed = false;
+
+			mHighScore += 100;
+			//Change based on which enemy is killed later.
 		}
 		else
 		{
@@ -353,9 +360,7 @@ void Gameplay::Draw()
 
 		SDL_RenderCopy(renderer, mBackgroundTex4, &srcRect, NULL);
 	}
-	//draw lives
 
-	
 	// draw missiles
 	for (auto it = mMissiles.begin(); it != mMissiles.end(); it++) {
 		Missile* m = *it;
@@ -393,6 +398,10 @@ void Gameplay::Draw()
 		//std::cout << "mPlayerLives" << mPlayerLives << std::endl;
 			SDL_RenderCopy(renderer, mPlayerTex, NULL, &life);
 	}
+
+	//Display High Score!
+	//mPlayerLives
+	//https://stackoverflow.com/questions/22886500/how-to-render-text-in-sdl2
 }
 void Gameplay::OnKeyDown(const SDL_KeyboardEvent& kbe)
 {

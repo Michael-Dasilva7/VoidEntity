@@ -40,6 +40,8 @@ class Gameplay : public GameState
 	int                 mEnemyCount;
 	int                 mMissleCount;
 
+	int					mHighScore;
+
 	int					mPlayerLives; //how many lives a player has
 	Uint32				mLastTime;
     bool                mIsActive;
