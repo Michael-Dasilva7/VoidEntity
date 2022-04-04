@@ -17,18 +17,21 @@ bool Sound::Init()
 		printf("SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
-	mLazer = Mix_LoadWAV("media/lazer1.wav");
+	mLazer = Mix_LoadWAV("media/sounds/lazer1.wav");
 	if (mLazer == NULL)
 	{
 		printf("Failed to load lazer SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
-	mExplosion = Mix_LoadWAV("media/explode.wav");
+	mExplosion = Mix_LoadWAV("media/sounds/explode.wav");
 	if (mExplosion == NULL)
 	{
 		printf("Failed to load explosion! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
+
+	// Set starting volume
+
 	return success;
 }
 void Sound::playLazer()
@@ -39,18 +42,25 @@ void Sound::playExplosion()
 {
 	Mix_PlayChannel(-1, mExplosion, 0);
 }
-void Sound::playTime()
+void Sound::playIntroMus()
 {
 
-	music = Mix_LoadMUS("media/time.mp3");
+	music = Mix_LoadMUS("media/sounds/introMus.wav");
 	Mix_FadeInMusic(music, -1, 4000);
 }
-void Sound::playAxelayTheme()
+
+void Sound::levelOneTheme()
 {
-	music = Mix_LoadMUS("media/time.mp3");
+	music = Mix_LoadMUS("media/sounds/level1Mus.mp3");
 	Mix_FadeInMusic(music, -1, 4000);
 //	Mix_PlayMusic(music, -1);
 }
+
+//new enemies
+//score that increases when enemies are destroyed
+//high score that saves even after closing the game (save to a file thats fine)
+//after a certain period, a boss come
+//fix the background.
 
 void Sound::increaseVolume()
 {

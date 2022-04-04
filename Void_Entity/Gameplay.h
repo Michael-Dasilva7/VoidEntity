@@ -9,7 +9,6 @@
 #include "Explosion.h"
 #include <list>
 
-
 class Gameplay : public GameState
 {
 	Player*				       mPlayer;
@@ -20,6 +19,7 @@ class Gameplay : public GameState
 
 	Uint32              mCurrentTime;
 	
+	//TODO: Implement a resourceManager to dynamically create and return pointers to textures
 	SDL_Texture*        mPlayerTex;
     SDL_Texture*        mShotTex;
 	SDL_Texture*		mBackgroundTex1;
@@ -27,7 +27,11 @@ class Gameplay : public GameState
 	SDL_Texture*		mBackgroundTex3;
 	SDL_Texture*		mBackgroundTex4;
 	SDL_Texture*        mFlierTex;
-	SDL_Texture*        mExplosionTex;
+	SDL_Texture*		mExplosionTex;
+
+	SDL_Texture*		mTextAndNumbers;
+
+	SDL_Texture*		mMissleAnimations;
 
 	SDL_Rect			srcRect;
 	SDL_Rect		    dstRect;
@@ -42,9 +46,20 @@ class Gameplay : public GameState
 
 	int					mHighScore;
 
+	int					mEnemyKillCount;
+	bool				mPauseEnemyGeneration;
+
 	int					mPlayerLives; //how many lives a player has
 	Uint32				mLastTime;
     bool                mIsActive;
+
+	bool				mIsLevelOnePhaseOne;	//before the star field and enemy generation
+	bool				mIsLevelOnePhaseTwo;	//This is when enemies start to spawn and particle field comes in
+	bool				mIsLevelOnePhaseThree;  //This is when the boss appears! 
+
+	bool				mIsLevelTwoPhaseOne;
+	bool				mIsLevelTwoPhaseTwo;
+	bool				mIsLevelTwoPhaseThree;
 
 	Sound*			    mCurrentSound;
 public:
@@ -58,5 +73,8 @@ public:
     void                Update() override;
     void                Draw() override;
     void		        OnKeyDown(const SDL_KeyboardEvent& kbe) override;
+	void				OnMouseDown(const SDL_MouseButtonEvent& mbe) override;
+
+	void				FirePlayerBullet();
 };
 #endif

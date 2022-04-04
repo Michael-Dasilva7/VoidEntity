@@ -2,6 +2,7 @@
 #define MISSILE_H_
 
 #include <SDL.h>
+#include "Animation.h"
 
 class Missile
 {
@@ -12,7 +13,7 @@ class Missile
 
     int                     mSpeedX;
     int                     mSpeedY;
-
+	
 public:
 							Missile();
 							Missile(SDL_Texture* tex);

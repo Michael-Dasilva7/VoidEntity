@@ -74,7 +74,8 @@ void Player::Update(const Uint8* keys)
     // update position based on current keyboard state
     //
 
-   
+	//   
+
     if (keys[SDL_SCANCODE_D] ) {
 		
         mRect.x += 4;
@@ -91,7 +92,10 @@ void Player::Update(const Uint8* keys)
     if (keys[SDL_SCANCODE_S]) {
 		mRect.y += 4;
 		if (mRect.y > 600 - mRect.h){ mRect.y -= 4; }
-    }
+    }else{
+		//Set Idle Animation
+	}
+
 }
 bool Player::isCollision(int x, int y)
 {

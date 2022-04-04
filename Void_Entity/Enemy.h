@@ -2,9 +2,10 @@
 #define ENEMY_H_
 
 #include <SDL.h>
-#include <list>
-#include "Player.h"
+#include <list> 
 #include "Missile.h"
+
+
 /*
 This is the base pure virtual class that all the simple enemies in the game are derived from
 SET TO ADD AnIMATION FUNCTIONALITY
@@ -15,6 +16,7 @@ class Enemy
 	SDL_Rect				mRect;
     SDL_Color*   			mColor;     // fallback color, in case there are problems with the texture
 	SDL_Texture*            mTex;
+ 
 	//int[][]                 mEnemySpec; //list of sprite sizes  
 public:
 	Enemy(){};
@@ -37,5 +39,6 @@ public:
 	virtual void Update() = 0;
 	virtual void Draw(SDL_Renderer* renderer) = 0;
 	virtual bool isCollision(int x, int y) = 0;
+	virtual	int scoreCount() = 0;
 };
 #endif

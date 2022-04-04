@@ -19,8 +19,8 @@ public:
 	void				shutdown();
 	void				playLazer();
 	void				playExplosion();
-	void				playTime();
-	void				playAxelayTheme();
+	void				playIntroMus();
+	void				levelOneTheme();
 	void				stopMusic();
 	void				increaseVolume();
 	bool				Init();

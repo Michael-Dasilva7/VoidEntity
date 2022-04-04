@@ -8,7 +8,7 @@ class Explosion
 
 	SDL_Texture*            mTex;
 	int						mAnimationFrame;
-	Animation*             mAnimation;
+	Animation*              mAnimation;
 public:
 	Explosion();
 	Explosion(SDL_Texture* tex, int x, int y);

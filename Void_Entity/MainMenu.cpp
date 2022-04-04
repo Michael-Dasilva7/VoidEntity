@@ -27,12 +27,12 @@ void MainMenu::Initialize()
 {
     SDL_Renderer* renderer = mGame->GetRenderer();
 
-	mDescription1 = LoadTexture("media/x-saveTheVerse.png",renderer);
-	mDescription2 = LoadTexture("media/x-fromDestruction.png", renderer);
-    mBtnNewTex = LoadTexture("media/x-New_Game.png", renderer);
-    mBtnResumeTex = LoadTexture("media/button_resume.png", renderer);
-    mBtnExitTex = LoadTexture("media/x-Exit_Game.png", renderer);
-	mBackground = LoadTexture("media/starysky.jpg", renderer);
+	mDescription1 = LoadTexture("media/UI/x-saveTheVerse.png",renderer);
+	mDescription2 = LoadTexture("media/UI/x-fromDestruction.png", renderer);
+    mBtnNewTex = LoadTexture("media/UI/x-New_Game.png", renderer);
+    mBtnResumeTex = LoadTexture("media/UI/button_resume.png", renderer);
+    mBtnExitTex = LoadTexture("media/UI/x-Exit_Game.png", renderer);
+	mBackground = LoadTexture("media/backgrounds/starysky.jpg", renderer);
 
 	SDL_Rect* background = new SDL_Rect();
 	background->w = 900;
@@ -52,7 +52,7 @@ void MainMenu::Initialize()
     mBtnExit->SetCenter(cx, cy + 100);
 
 	//load sound for the title 
-	mCurrentSound->playTime();
+	mCurrentSound->playIntroMus();
 
 }
 

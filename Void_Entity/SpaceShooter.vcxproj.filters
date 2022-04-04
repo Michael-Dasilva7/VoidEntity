@@ -56,6 +56,10 @@
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="Explosion.h" />
+    <ClInclude Include="..\..\ProtoOne\ProtoOne\ResourceManager.h" />
+    <ClInclude Include="test.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GameStates">
